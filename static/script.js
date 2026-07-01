@@ -24,7 +24,7 @@ async function Prediction(){
         sleep : parseInt(document.getElementById('sleep').value),
         study : parseInt(document.getElementById('study').value),
     };
-    const response = await fetch("http://127.0.0.1:8000/predict",{
+    const response = await fetch("/predict",{
         method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(data)
     });
     const result = await response.json();
