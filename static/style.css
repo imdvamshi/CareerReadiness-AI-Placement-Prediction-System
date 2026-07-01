@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: rgb(240, 226, 210);
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    size: 70px;
+}
+
+input {
+    height:22px;
+    margin-bottom: 10px;
+}
+
+select {
+    height:22px;
+    margin-bottom: 10px;
+}
+
+button {
+    color: rgb(255, 255, 255);
+    background-color: rgb(228, 105, 105);
+    margin-top: 20px;
+    width: 150px;
+    height: 35px;
+}
