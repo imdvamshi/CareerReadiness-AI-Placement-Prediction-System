@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Placement Prediction System</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="Header">
+        <h1>AI Placement Prediction System</h1>
+    </div>
+    <div class="container">
+
+        <label>Age</label>
+        <input id="age" >
+
+        <label>Gender</label>
+        <select id="gender">
+            <option value="" disabled selected hidden>----- Select an option -----</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+
+        <label>cgpa</label>
+        <input id="cgpa" placeholder="out of 10.00">
+
+        <label>branch</label>
+        <select id="branch">
+            <option value="" disabled selected hidden>----- Select an option -----</option>
+            <option value='IT'>IT</option>
+            <option value='CSE'>CSE</option>
+            <option value='EEE'>EEE</option>
+            <option value='Civil'>Civil</option>
+            <option value='Mechanical'>Mechanical</option>
+            <option value='ECE'>ECE</option>
+        </select>
+
+        <label>college-tier</label>
+        <select id="college-tier">
+            <option value="" disabled selected hidden>----- Select an option -----</option>
+            <option value="Tier 1">Tier 1</option>
+            <option value="Tier 2">Tier 2</option>
+            <option value="Tier 3">Tier 3</option>
+        </select>
+
+        <label>internships-count</label>
+        <input id="internships">
+
+        <label>Projects-count</label>
+        <input id="projects">
+
+        <label>certifications-count</label>
+        <input id="certifications">
+
+        <label>coding-skill score</label>
+        <input id="coding" placeholder="out of 100">
+
+        <label>aptitude score</label>
+        <input id="aptitude" placeholder="out of 100">
+
+        <label>communication-skill score </label>
+        <input id="communication" placeholder="out of 100">
+
+        <label>logical-reasoning score</label>
+        <input id="logical" placeholder="out of 100">
+
+        <label>Hackathons participated</label>
+        <input id="hackathons">
+
+        <label>Github repos</label>
+        <input id="github">
+
+        <label>linked-in connections</label>
+        <input id="linkedin">
+
+        <label>mock-interview score</label>
+        <input id="mockinterview" placeholder="out of 100">
+
+        <label>attendance percentage</label>
+        <input id="attendance" placeholder="out of 100">
+
+        <label>backlogs</label>
+        <input id="backlogs">
+
+        <label>extra-curricular score</label>
+        <input id="extra" placeholder="out of 100">
+
+        <label>leadership score</label>
+        <input id="leadership" placeholder="out of 100">
+
+        <label>volunteer experience</label>
+        <select id="volunteer">
+        <option value="" disabled selected hidden>----- Select an option -----</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+        </select>
+
+        <label>sleep hours</label>
+        <input id="sleep">
+
+        <label>study hours per day</label>
+        <input id="study">
+
+        <button onclick="Prediction()">Predict Price</button>
+    </div>
+    <div class="result">
+        <h1 id="result"></h1>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
